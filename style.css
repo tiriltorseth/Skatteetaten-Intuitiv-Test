@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D4F6FF;
+}
+
+.task-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-intro {
+    display: flex;
+
+    flex-direction: column; /* Stacks text and button vertically */
+    justify-content: center; /* Centers everything vertically */
+    align-items: center; /* Centers everything horizontally */
+    min-height: 100vh; /* Ensures full height of the viewport */
+    text-align: center; /* Centers text */
+}
+
+#intro {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.oppgavetittel {
+    font-size: 20px;
+}
+
+.rounded-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #FFDDAE; /* Light pink */
+
+    border: 1px solid #444444;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.test-container {
+    position: relative;
+    width: 1100px;
+    height: 620px;
+    margin: 0 auto;
+    border: 8px solid #ffff;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Makes the image cover the container */
+    height: 100%; /* Makes the image fill the container */
+    object-fit: cover; /* Ensures the image covers the whole container without distorting */
+    z-index: -1; /* Makes sure the image stays in the background, behind the hotspots */
+}
+
+.hotspot {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);;
+    cursor: pointer;
+    width: 120px;
+    height: 80px;
+    opacity: 0%;  /* Usynlig */
+}
+
+.hidden {
+    display: none;
+}
+
